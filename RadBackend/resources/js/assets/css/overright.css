@@ -1,0 +1,94 @@
+:root{
+    --bs-btn-color: rgba(255, 255, 255, 0) !important;
+}
+.card{
+    border: none ;
+    border-radius: 4px;
+    -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.55);
+    box-shadow: rgba(0, 0, 0, 0.03) 0px 4px 8px;
+}
+.h2, svg{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+li:hover{
+    background: #808080 !important;
+    border-radius: 5px !important;
+}
+.css-78trlr-MuiButtonBase-root-MuiIconButton-root:hover{
+ background: #D0D6F8 !important;
+}
+
+.MuiTableRow-head > th{
+    background-color: #D0D6F8;
+}
+.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root{
+    padding:0 0 0 12px !important;
+}
+.ql-toolbar,.ql-snow, .ql-editor{
+    background-color: white !important;
+}
+
+.css-o4b71y-MuiAccordionSummary-content{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-primary{
+    background-color: #6777EF;
+}.btn-primary:hover{
+    background-color: #49AAD7;
+}
+.css-1x51dt5-MuiInputBase-input-MuiInput-input{
+    color: #5c5c5c !important;
+    padding: 2px;
+    text-align: center;
+}
+.btn-dark{
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #ffffff00;
+    --bs-btn-border-color: #ffffff00;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #1c1f2300;
+    --bs-btn-hover-border-color: #4c5a65;
+    --bs-btn-focus-shadow-rgb: 66,70,73;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #1a1e21;
+    --bs-btn-active-border-color: #191c1f;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #212529;
+    --bs-btn-disabled-border-color: #212529;
+}
+.btn-dark:active{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.btn-dark:focus {
+    outline: none;
+    box-shadow: none;
+}
+.btn-dark{
+    box-shadow: none !important
+}
+.MuiList-root> li:hover{
+    border-radius: 0 !important;
+}
+.mediaList>.MuiImageList-root> li:hover{
+    background: none !important;
+}
+
+.mediaList>.MuiImageList-root> li>.MuiPaper-root{
+    padding-top: 13px;
+    background: #f3f3f3;
+}
+.mediaList>.MuiImageList-root> li>.MuiPaper-root:hover{
+    padding-top: 10px;
+    background: none;
+}
+li:hover{
+    border-radius: 0 !important;
+}
+.modal-backdrop, .fade{
+    background-color: rgba(196, 180, 122, 0.13) !important;
+    backdrop-filter: blur(1px);
+}

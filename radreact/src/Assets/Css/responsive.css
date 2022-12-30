@@ -1,0 +1,84 @@
+@media (max-width: 575px) {
+	.eventSectionMain,.announcementFixedOverlay,.announcementFixedText {height: 900px;}
+	.announcementFixedText > div > div {margin-bottom: 30px;}
+	.h2Text {font-size: 27px !important;}
+	.trainingItemOffHover {width: 100% !important;}
+
+	.footerIcon {
+		justify-content: left !important;
+		font-size: 20px;
+		padding-bottom: 10px;
+	}
+	.aboutCardBody{height: 525px !important;}
+	.aboutCardDetails{height: 110px !important;}
+}
+
+@media (min-width:576px) and (max-width:765px) {
+	.aboutCardBody{height: 455px !important;}
+	.aboutCardDetails{height: 100px !important;}
+}
+
+@media (min-width: 766px) and (max-width: 991px) {
+	.trainingItem,.courseImg {height: 200px;}
+	.videoSection {
+		max-height: 360px !important;
+		min-height: 360px !important;
+	}
+	.videoSectionText{padding: 30px !important;}
+	.h1Text {font-size: 40px;}
+	.h2Text {font-size: 30px;}
+	.aboutCardBody{height: 500px !important;}
+	.aboutCardDetails{height: 140px !important;}
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+	.trainingItem,.courseImg {height: 200px;}
+	.videoSection {
+		max-height: 520px !important;
+		min-height: 520px !important;
+	}
+	.videoSectionText {padding: 30px !important;}
+	.trainingItem, .courseImg{height: 190px !important;}
+	.courseImg{width: 110% !important;}
+	.aboutCardBody{height: 480px !important;}
+	.aboutCardDetails{height: 110px !important;}
+
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+	.trainingItem, .courseImg{
+		height: 190px !important;
+	}
+	.trainingItemOffHover{
+		margin: 10px 0 0 15px !important;
+	}
+	.courseImg{
+		width: 120% !important;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 990px) {
+	.trainingItemOffHover{
+		margin: 10px 0 0 15px !important;
+	}
+}
+
+@media (max-width: 778px) {
+	.trainingItemOffHover{
+		margin: 10px 0 0 10px !important;
+	}
+	.h2Text{
+		font-size: 35px;
+	}
+	.announcementFixedOverlay, .eventSectionMain, .announcementFixedText{
+		 height: 695px !important;
+	 }
+}
+
+@media (max-width: 768px) {
+	.appCol{
+		margin: 30px 0 0 0!important;
+	}
+
+}

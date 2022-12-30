@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@300;400&family=Roboto+Condensed:wght@300;400;700&display=swap');
+:root {
+	--font-1: 'Open Sans', sans-serif;
+	--font-2: 'Roboto Condensed', sans-serif;
+	--font-3: 'Poppins', sans-serif;
+}
+
+hr {
+	height: 3px;
+	font-weight: 700;
+	width: 90%;
+	color: whitesmoke;
+	text-align: center;
+}
+.primaryColor {
+	background: #56B6E2 !important;
+}
+.seconderColor {
+	background: #ff8b61;
+}
+body{
+	font-weight: 300;
+	font-family: var(--font-2);
+}
+
+.navItem,
+.nav-link {
+	font-family: var(--font-2);
+	font-size: 20px;
+	color: white;
+	font-weight: 300;
+	cursor: pointer;
+	text-shadow: -1px -1px 0px rgba(255, 0, 0, 0.2);
+	background: rgba(69, 175, 223, 0);
+}
+.navItemAlt {
+	font-family: var(--font-2);
+	font-size: 20px;
+	color: #4b4b4b;
+	font-weight: 800;
+	cursor: pointer;
+	border-bottom: 2px solid white;
+	text-shadow: -1px -1px 0px rgba(252, 252, 252, 0.07);
+}
+.dropdown-menu,
+.show {
+	background: rgba(255, 255, 255, 0);
+	border: hidden;
+	font-family: var(--font-2);
+	font-size: 20px;
+	color: white !important;
+	font-weight: 300;
+	cursor: pointer;
+	text-shadow: -1px -1px 0px rgba(255, 0, 0, 0.2);
+}
+.navItem.nav-item.dropdown > a {
+	font-family: var(--font-1);
+	font-size: 18px;
+}
+
+.h1Text {
+	font-size: 50px;
+	font-weight: 700;
+	width: 80%;
+}
+
+.h1PlaneText {
+	font-size: 50px;
+	font-weight: 700;
+}
+
+.h2Text {
+	font-size: 40px;
+	font-weight: 700;
+	width: 80%;
+}
+
+.subTitile {
+	font-size: 20px;
+}
+
+.topFixedOverlay {
+	width: 100%;
+	height: 650px;
+	background-color: rgba(79, 79, 73, 0.71);
+}
+
+.topFixedText {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	height: 650px;
+	text-shadow: 2px 2px 4px #3a3a3a;
+}
+.trainingItem {
+	height: 160px;
+}
+
+.courseImg {
+	height: 100%;
+	width: 100%;
+}
+
+/*.trainingItem:hover > .trainingItemOffHover {*/
+/*	display: none;*/
+/*}*/
+.trainingItemOffHover{
+	margin: 20px;
+	height: 160px;
+}
+
+/*.trainingItem:hover {*/
+/*	display: flex;*/
+/*	justify-content: center;*/
+/*	align-items: center;*/
+/*	background: #ffa281;*/
+/*}*/
+
+/*.trainingItem:hover>trainingItemOnHover{*/
+/*	width: 100%;*/
+/*}*/
+
+/*.cardShadow:hover > .row{*/
+/*	width: 100% !important;*/
+/*}*/
+
+
+
+/*test*/
+.courseCardOffHover>div:nth-child(2){
+	height: 160px;
+	display: none;
+	width: 100%;
+}
+
+.courseCardOffHover:hover> div:nth-child(1){
+	display:none;
+	width: 100%;
+}
+.courseCardOffHover:hover>div:nth-child(2){
+	background: #FFA281;
+	display: flex
+}
+
+
+
+/*test*/
+
+
+
+  .trainingItemOnHover {
+	visibility: hidden;
+	width: 100%;
+}
+
+
+.trainingItem:hover > .trainingItemOnHover {
+	visibility: visible;
+	background: white;
+	padding: 10px;
+	border-radius: 3px;
+}
+.logo {
+	width: 150px !important;
+}
+.cardTitle {
+	font-size: 22px;
+	font-weight: 500;
+}
+.cardText {
+	font-size: 14px;
+	font-weight: 300;
+}
+.cardShadow {
+	box-shadow: -1px 3px 12px 0px rgba(0, 0, 0, 0.11);
+	-webkit-box-shadow: -1px 3px 12px 0px rgba(0, 0, 0, 0.11);
+	-moz-box-shadow: -1px 3px 12px 0px rgba(0, 0, 0, 0.11);
+}
+.inputBox {
+	border: 1px solid #4f4f4f;
+	background: #212529;
+	padding: 8px;
+}
+ul,
+li {
+	list-style: none;
+}
+.footerHeading {
+	color: #d0d0d0;
+	font-size: 14px;
+	margin-bottom: 0px;
+	padding: 0 0 10px 0;
+	background: url('../Images/add-line.png') left bottom no-repeat;
+	text-transform: uppercase;
+}
+.trainingBackground {
+	background-image: url('../Images/trainingBackground.png');
+	background-position: center;
+}
+
+.announcementFixedOverlay {
+	width: 100%;
+	height: 650px;
+	background-color: rgba(102, 98, 95, 0.43);
+}
+.announcementFixedBanner {
+	background-image: url('../Images/MotivationalSpeaker.jpg');
+	background-attachment: fixed;
+	opacity: 0.8;
+	background-position: 50%;
+	background-size: cover;
+	width: 100%;
+	height: 650px;
+	padding: 0;
+}
+.announcementFixedText {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	height: 650px;
+	text-shadow: 2px 2px 4px #3a3a3a;
+}
+.videoText {
+	background-image: url('../Images/videoSectionBackground.png');
+	background-color: #ff8b61;
+	transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+.videoSection {
+	max-height: 527px;
+	min-height: 527px;
+}
+
+.eventSectionMain {
+	background-attachment: fixed;
+	opacity: 0.8;
+	background-position: 50%;
+	background-size: cover;
+	width: 100%;
+	height: 650px;
+	padding: 0;
+}
+.courseSection {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.courseNotion > div> span{
+	font-size: 17px;
+	text-transform: capitalize;
+	font-weight: 400;
+	color: #666666;
+}
+.addressRow> div> div> p:nth-child(1)
+{
+	font-size: 19px;
+	font-weight: 500;
+	color: black;
+	text-transform: capitalize;
+}
+
+.aboutCardBody{
+	height: 450px;
+}
+.aboutCardDetails{
+	height: 80px;
+}
+.profileTimeline{
+	overflow:hidden;
+}
+.profileTimelineCover{
+	height: 150px;
+	width:100%;
+	position:relative;
+}
+.profileTimeline img{
+	position:absolute;
+	bottom:-75px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 170px;
+	width: 170px;
+}
+.profileSocialIcon{
+	height: 40px !important;
+	width: 80px;
+	margin: 0 8px !important;
+	text-align: center;
+}
+.profileSocialIcon > svg{
+	height: 22px;
+}
+.footerAccordion>h2>button{
+	background-color: #179BD7 !important;
+	border: none;
+	justify-content: center;
+	color: white !important;
+	border-radius: 0 !important;
+}
+.btn:focus,.btn:active, button:active, button:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+.footerAccordion> h2 > .accordion-button:not(.collapsed)::after, .footerAccordion> h2 >.accordion-button::after{
+	display: none;
+}
+.dropdownParent{
+	position: relative;
+	display: inline-block;
+}
+.dropdownChild{
+	position: absolute;
+	background-color: #55B5E2;
+	width: 140px;
+	display: none;
+}
+.dropdownParent:hover > .dropdownChild{
+	display: flex;
+	flex-direction: column;
+}
+.dropdownChild>a{
+	padding: 5px 0 5px 10px;
+}
+.dropdownChild>a:hover{
+	background-color: #FFA281;
+}
+
+.faqAccordion>h2>button{
+	background-color: #179BD7 !important;
+	border: none;
+	justify-content: center;
+	color: white !important;
+	border-radius: 0 !important;
+}
+.active{
+	border-bottom: 2px solid #FFCA08 !important;
+}
+

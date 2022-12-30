@@ -1,0 +1,61 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	color:black;
+}
+
+a {
+	color: inherit;
+	text-decoration: none !important;
+}
+
+.link-secondary > a {
+	color: white;
+}
+
+.link-secondary > a:hover {
+	color: #d4b010;
+}
+svg:hover {
+	color: white !important;
+}
+* {
+	box-sizing: border-box;
+}
+textarea {
+	border: 1px solid #a4a4a4;
+}
+.courseCard {
+	border: solid rgb(229, 229, 229) 1px !important;
+	cursor: pointer;
+	color: rgb(62, 62, 62);
+}
+.courseCard:hover {
+	color: #6a6a6a;
+	box-shadow: 1px 1px 7px -1px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 1px 1px 7px -1px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 1px 1px 7px -1px rgba(0, 0, 0, 0.75);
+}
+.courseTitle {
+	font-family: 'Signika Negative', sans-serif;
+	font-weight: 500 !important;
+	margin-bottom: 2px !important;
+	font-size: 19px !important;
+}
+
+.cardMentor {
+	font-family: 'Signika Negative', sans-serif;
+	margin-bottom: 10px;
+	font-weight: 300;
+}
+.cardDate {
+	font-family: 'Signika Negative', sans-serif;
+	font-size: 15px !important;
+}
+td{
+	color:black;
+}
+th, td{
+	text-shadow: none;
+}

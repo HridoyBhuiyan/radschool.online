@@ -1,0 +1,61 @@
+.dropdown-menu,
+.show {
+	border-radius: 0 !important;
+	background: #212529;
+	border-color: #212529;
+}
+
+.dropdown-menu,
+.show > a {
+	color: #aeb3a8;
+}
+svg {
+	height: 15px;
+}
+.navbar-toggler:focus{
+	box-shadow: none;
+}
+.btn-check:active+.btn, .btn:active{
+	box-shadow: none;
+}
+
+.nav-tabs >li> .nav-link{
+	color: #4d4d4d;
+	text-shadow: none !important;
+	background-color: #eeeeee;
+	border: 1px #f38800 solid;
+	font-weight: 500;
+}
+
+
+.ql-align-center{
+	text-align: center !important;
+}
+.ql-align-right{
+	text-align: right !important;
+}
+blockquote {
+	width: 100% !important;
+	background: rgba(7, 234, 255, 0.16);
+	border-left: 10px solid #ccc;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+	color: #ccc;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+blockquote p {
+	display: inline;
+}
+.ql-font-serif{
+	font-family: serif !important;
+}
+.ql-font-monospace{
+	font-family: monospace;
+}

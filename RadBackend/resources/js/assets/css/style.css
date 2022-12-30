@@ -1,0 +1,183 @@
+:root{
+    --font1:'Roboto', sans-serif;
+}
+body{
+    font-family: var(--font1);
+    background:#F4F6F9;
+
+}
+a{
+    text-decoration: none !important;
+}
+div{
+    font-family: var(--font1);
+}
+li{
+    list-style: none;
+    padding: 0px 0 0px 20px;
+    height: 50px;
+}
+ul{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+li:hover, .loginDropDown:hover{
+    background: gray !important;
+    color:white !important;
+}
+li:hover > .svg-inline--fa{
+    background: white;
+    color:gray;
+}
+.svg-inline--fa{
+    color:white;
+    font-size: 25px;
+    cursor: pointer;
+}
+a >li > .svg-inline--fa{
+    color: #ffffff;
+    padding: 5px !important;
+    border-radius: 4px;
+    background: #6777EF;
+    width: 28px !important;
+}
+a> li  > span{
+    margin-left: 15px;
+}
+a> li {
+    display: flex;
+    align-items: center;
+}
+
+.navPart{
+    background: white;
+    filter: drop-shadow(1px 0px 5px rgba(167, 167, 167, 0.55));
+    overflow-y: visible;
+    height: 100vh;
+}
+input{
+    border: none;
+    border-radius: 10px;
+}
+.mainHeader{
+    background: #6777EF;
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.71));
+    height: 80px;
+}
+.mainView{
+    background:#F4F6F9;
+}
+a > li > svg-inline--fa{
+    width: 10px;
+}
+
+.active{color: white; background:gray !important;}
+.active > li{background: gray;}
+.active > li > svg {background: white; color: #6777EF}
+
+.loginInput{
+    width: 500px;
+    height: 50px;
+}
+.media-container{
+    position: relative;
+}
+.media-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #808080;
+}
+.media-container:hover .media-overlay {
+    opacity: 1;
+}
+.companyItem{
+    margin: 2px !important;
+}
+.newEventCard{
+    width: 200px;
+    height: 250px !important;
+    cursor: pointer;
+}
+.newEventCard:hover{
+    -webkit-box-shadow: 5px 6px 12px -4px rgba(0,0,0,0.6);
+    box-shadow: 5px 6px 12px -4px rgba(0,0,0,0.6);
+}
+.newEventCard >div {
+    background: #d5d5d5;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newEventCard >div > svg {
+    font-size: 40px;
+    color: #666666 !important;
+}
+.eventAddCol > div >div {
+    width: 220px !important;
+    height: 240px;
+}
+
+.eventAddCol> div > div> div > img{
+    height: 120px;
+    width: 220px
+}
+.eventAddCol>div>span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ededff;
+}
+.eventAddCol>div>span>svg>path:hover{
+    color: #0DCAF0 ;
+}
+.memberListTable > div>.MuiPaper-root >.MuiToolbar-root{
+    display: none;
+}
+.topPopupEachItem{
+    border-bottom: 1px solid #c4c4c4;
+}
+
+
+
+
+.ql-align-center{
+    text-align: center !important;
+}
+.ql-align-right{
+    text-align: right !important;
+}
+.ql-align-left{
+    text-align: left !important;
+}
+blockquote {
+    background: rgba(7, 234, 255, 0.16);
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+blockquote p {
+    display: inline;
+}
+.ql-font-serif{
+    font-family: serif !important;
+}
+.ql-font-monospace{
+    font-family: monospace;
+}
