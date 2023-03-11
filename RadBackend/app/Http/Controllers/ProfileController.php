@@ -67,32 +67,31 @@ class ProfileController extends Controller
     }
 
     public function updateProfileEachData(Request $request){
-        $id=$request->input('id');
+        $id = $request->input('id');
         $email = ProfileModel::where('id', $id)->pluck('email')->first();
-        if ($request->hasFile('profilePhoto')){
-            $image = $request->file('profilePhoto')->store('/public');
+        if ($request->hasFile('photo')){
+            $image = $request->file('photo')->store('/public');
             $imageName = explode('/', $image)[1];
             ProfileModel::where('id',$id)->update(['profile_photo'=>"storage/".$imageName]);
             imageModel::insert(['image_path',$imageName]);
         }
 
-        if($request->has("nameID")){
-            $name = $request->input('nameID');
+        if($request->has("name")){
+            $name = $request->input('name');
             $user = UserModel::where('email',$email)->first();
             $user->name=$name;
             $user->save();
         }
-        if($request->has("fbID")){
-            $fbID=$request->input("fbID");
+        if($request->has("fb")){
+            $fbID=$request->input("fb");
             ProfileModel::where('email', $email)->update(['fb_link'=>$fbID]);
-
         }
-        if($request->has("ldID")){
-            $ldID=$request->input('ldID');
+        if($request->has("ld")){
+            $ldID=$request->input('ld');
             ProfileModel::where('email', $email)->update(["ld_link"=>$ldID]);
         }
-        if($request->has("designationID")){
-            $designation=$request->input('designationID');
+        if($request->has("designation")){
+            $designation=$request->input('designation');
              aboutModel::where('email', $email)->update(["designation"=>$designation]);
 
         }
@@ -100,19 +99,18 @@ class ProfileController extends Controller
             $education=$request->input('education');
             ProfileModel::where('email', $email)->update(["education"=>$education]);
         }
-        if($request->has("coverID")){
-            $cover=$request->input('coverID');
+        if($request->has("cover")){
+            $cover=$request->input('cover');
             aboutModel::where('email', $email)->update(["details"=>$cover]);
 
         }
-        if($request->has("twID")){
-            $twID=$request->input('twID');
+        if($request->has("tw")){
+            $twID=$request->input('tw');
             ProfileModel::where('email', $email)->update(["tw_link"=> $twID]);
         }
         if($request->has("bio")){
             $bio=$request->input('bio');
             ProfileModel::where('email', $email)->update(["bio"=>$bio]);
-
         }
 
     }

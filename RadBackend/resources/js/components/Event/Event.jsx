@@ -295,8 +295,6 @@ const Event = () => {
                     </div>
 
 
-
-
                     <div className={"py-2 w-100"}>
                         <p style={{fontSize:12, color:"rgb(118, 118, 118)"}} className={"companyItem"}>Detail</p>
                         <ReactQuill value={text} onChange={handleChange} modules={modules} formats={formats} style={{height:200, marginBottom:20}}/>
@@ -314,7 +312,6 @@ const Event = () => {
                     <Button variant="primary" onClick={()=>setModalSet(false)}>Close</Button>
                 </Modal.Footer>
             </Modal>
-
 
             {/*update post modal*/}
 
@@ -345,7 +342,6 @@ const Event = () => {
                     </div>
 
 
-                    {/**/}
                     <div className={"py-2 w-100"}>
                         <p style={{fontSize:12, color:"rgb(118, 118, 118)"}} className={"companyItem"}>Presentation</p>
                         <div className={"d-flex"}>

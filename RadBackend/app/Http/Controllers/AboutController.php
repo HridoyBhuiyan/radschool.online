@@ -23,19 +23,31 @@ class AboutController extends Controller
             $thumbnail = $profileData->profile_photo;
             $designation = $aboutData->designation;
             $shortDescription = $aboutData->details;
-            $LDprofile = $profileData->ld_link;
+            $ldProfile = $profileData->ld_link;
+            $fbProfile = $profileData->fb_link;
+            $twProfile = $profileData->tw_link;
+            $bio = $profileData->bio;
+            $education = $profileData->education;
             $info = [
                 "id"=>$id,
                 "name"=>$name,
                 "thumbnail"=>$thumbnail,
                 "designation"=>$designation,
                 "short_description"=>$shortDescription,
-                "linkedin"=>$LDprofile,
+                "linkedin"=>$ldProfile,
+                "facebook"=>$fbProfile,
+                "twitter"=>$twProfile,
+                "bio"=>$bio,
+                "education"=>$education,
+
             ];
             array_push($allUsers, $info);
         }
+
         return $allUsers;
     }
+
+
 
     function getUserAboutDataByID($id){
         $profileData = ProfileModel::where("id", $id)->first();

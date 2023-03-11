@@ -18,6 +18,7 @@ class applicationController extends Controller
         $coverLetter = $request->input("coverLetter");
         $jobTitle = $request->input("jobTitle");
         $phoneNumber = $request->input("phoneNumber");
+        $courseFee = $request->input("courseFee");
 
         //all time zone data
 
@@ -30,7 +31,6 @@ class applicationController extends Controller
         // all location data
 
         $countryName = "egypt";
-
 
         $postData = applicationModel::insert([
             "first_name"=>$firstName,

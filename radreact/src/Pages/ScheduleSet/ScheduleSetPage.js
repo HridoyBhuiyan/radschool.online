@@ -37,11 +37,13 @@ function ScheduleSetPage(props) {
 		let getEmail = document.getElementById('getEmail').value;
 		let courseName = document.getElementById('courseName').value;
 		let CourseID = document.getElementById('courseID').value;
+		let courseFee = document.getElementById('courseFee').value;
 		let CoverLEtter = document.getElementById('converLetter').value;
 		let jobTitle = document.getElementById("jobTitle").value;
 		let phoneNumber = document.getElementById("phoneNumber").value;
 
 		let makeJSON = {
+			courseFee:courseFee,
 			firstName: firstName,
 			lastName: lastName,
 			email: getEmail,
@@ -122,7 +124,7 @@ function ScheduleSetPage(props) {
 						</Col>
 
 						<Col lg={6} xl={6} md={6} sm={12} xs={12} className={'py-2'}>
-							<TextField id="courseID" label="Course Fee" value={data && data.price} fullWidth InputLabelProps={{shrink: true,}} className={"appCol"}/>
+							<TextField id="courseFee" label="Course Fee" value={data && data.price} fullWidth InputLabelProps={{shrink: true,}} className={"appCol"}/>
 						</Col>
 						<Col lg={6} xl={6} md={6} sm={12} xs={12} className={'py-2'}>
 							<TextField id="courseID" label="Course ID" value={data && data.course_id} fullWidth InputLabelProps={{shrink: true,}} className={"appCol"}/>

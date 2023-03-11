@@ -221,9 +221,6 @@ const Course = () => {
         "background",
     ];
 
-    // const formats = [
-    //     'font','header', 'bold', 'italic', 'underline', 'strike', 'blockquote', 'list', 'bullet', 'indent', 'link', 'align','color','background'
-    // ];
 
     useEffect(()=>{
         getCourseData()

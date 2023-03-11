@@ -2,7 +2,7 @@ class appURL {
 
 	static baseURL = 'https://admin.radschool.online/api/';
 	static rootDomain = 'https://admin.radschool.online/';
-
+	//
 	// static baseURL = 'http://localhost:8000/api/';
 	// static rootDomain = 'http://localhost:8000/';
 
@@ -41,6 +41,5 @@ class appURL {
 	static postScheduleSet = this.baseURL + 'radAppllication';
 	static getSubBanner = this.baseURL + 'subBanner';
 	static getFaq = this.baseURL + 'faqData';
-
 }
 export default appURL;

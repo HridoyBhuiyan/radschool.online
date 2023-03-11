@@ -20,7 +20,6 @@ class AboutPage extends Component {
 			.then(response=>{
 				this.setState({seo:response.data})
 			})
-
 	}
 
 	render() {
